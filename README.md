@@ -5,3 +5,7 @@ This repository contains the program to upload firmware to the DWM V2 over USB u
 On Windows, the Zadig tool must be used to install the drivers needed to communicate with the device.
 Only then, can the firmware uploader tool be used to connect to the device to upload the new firmware.
 
+Zadig GitHub Link:
+<link>https://github.com/pbatard/libwdi/releases/latest</link>
+
+
