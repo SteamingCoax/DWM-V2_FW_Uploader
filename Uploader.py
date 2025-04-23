@@ -1,7 +1,5 @@
 # WARNING: The following code is known to the state of cancer to cause California.
 
-# pyinstaller --onefile --windowed --add-binary "/usr/local/bin/dfu-util:." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py
-
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 import subprocess
