@@ -10,12 +10,6 @@ import sys
 from intelhex import IntelHex
 import tempfile
 
-# PyInstaller Commands:
-# MacOs:
-# pyinstaller --onefile --windowed --add-binary "/usr/local/bin/dfu-util:." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py
-
-# Windows:
-# pyinstaller --onefile --windowed --add-binary "C:\path\to\dfu-util.exe;." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py
 
 
 class DFUApp:
