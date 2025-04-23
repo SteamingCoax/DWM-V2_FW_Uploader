@@ -30,6 +30,7 @@ Windows:
 
 
 3. install dependencies
+Download the dfu-util.exe and place it into this folder if it is not already in this folder: <link>http://dfu-util.sourceforge.net/releases/dfu-util-0.8-binaries/win32-mingw32/dfu-util-static.exe</link>
 <code>pip install activate intelhex</code>
 
 4: Build it
