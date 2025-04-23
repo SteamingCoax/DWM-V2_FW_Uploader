@@ -2,38 +2,38 @@ Once built, the application can be found in dist/
 
 MacOS/Linux:
 1. make the python virtual environment:
-python -m venv dfu_venv
+<code>python -m venv dfu_venv</code>
 
 
 2. Jump into the virtual environment
 MacOs:
-source dfu_env/bin/activate
+<code>source dfu_env/bin/activate</code>
 
 
 3. install dependencies
-pip install activate intelhex threading
-brew install python-tk
+<code>pip install activate intelhex threading
+brew install python-tk</code>
 
 4. Build it
-pyinstaller --onefile --windowed --add-binary "/usr/local/bin/dfu-util:." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py
+<code>pyinstaller --onefile --windowed --add-binary "/usr/local/bin/dfu-util:." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py</code>
 
 
 
 
 Windows:
 1. make the virtual environment:
-python -m venv dfu_venv
+<code>python -m venv dfu_venv</code>
 
 
 2. Jump into the virtual environment
-dfu_venv\Scripts\activate.bat
+<code>dfu_venv\Scripts\activate.bat</code>
 
 
 3. install dependencies
-pip install activate intelhex
+<code>pip install activate intelhex</code>
 
 4: Build it
-pyinstaller --onefile --windowed --add-binary "dfu-util.exe;." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py
+<code>pyinstaller --onefile --windowed --add-binary "dfu-util.exe;." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py</code>
 
 
 
@@ -42,12 +42,12 @@ pyinstaller --onefile --windowed --add-binary "dfu-util.exe;." --hidden-import=t
 Once everything is installed and if you want to make adjustments to the app and re-build it, do this:
 
 MacOs:
-source dfu_env/bin/activate
+<code>source dfu_env/bin/activate
 
-pyinstaller --onefile --windowed --add-binary "/usr/local/bin/dfu-util:." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py
+pyinstaller --onefile --windowed --add-binary "/usr/local/bin/dfu-util:." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py</code>
 
 
 Windows:
-dfu_venv\Scripts\activate.bat
+<code>dfu_venv\Scripts\activate.bat
 
-pyinstaller --onefile --windowed --add-binary "dfu-util.exe;." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py
+pyinstaller --onefile --windowed --add-binary "dfu-util.exe;." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py</code>
