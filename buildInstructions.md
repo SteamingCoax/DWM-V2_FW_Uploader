@@ -1,6 +1,6 @@
 Once built, the application can be found in dist/
 
-MacOS:
+MacOS/Linux:
 1. make the python virtual environment:
 python -m venv dfu_venv
 
