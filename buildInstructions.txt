@@ -1,5 +1,46 @@
 Once built, the application can be found in dist/
 
+MacOS:
+1. make the python virtual environment:
+python -m venv dfu_venv
+
+
+2. Jump into the virtual environment
+MacOs:
+source dfu_env/bin/activate
+
+
+3. install dependencies
+pip install activate intelhex threading
+brew install python-tk
+
+4. Build it
+pyinstaller --onefile --windowed --add-binary "/usr/local/bin/dfu-util:." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py
+
+
+
+
+Windows:
+1. make the virtual environment:
+python -m venv dfu_venv
+
+
+2. Jump into the virtual environment
+dfu_venv\Scripts\activate.bat
+
+
+3. install dependencies
+pip install activate intelhex
+
+4: Build it
+pyinstaller --onefile --windowed --add-binary "dfu-util.exe;." --hidden-import=tkinter --hidden-import=ttk --hidden-import=threading --hidden-import=intelhex --clean Uploader.py
+
+
+
+
+
+Once everything is installed and if you want to make adjustments to the app and re-build it, do this:
+
 MacOs:
 source dfu_env/bin/activate
 
